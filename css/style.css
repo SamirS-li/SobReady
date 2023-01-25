@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --white: #fff;
+    --primary: #e21a43;
+    --muted: #888;
+    --primary-muted: #fce8ec;
+    --secondary: #F7F7F7;
+    --silver: #666;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 110px;
+    box-shadow: 0px 0.5px 0px #8888888e;
+}
+
+.active {
+    background-color: var(--primary);
+    color: var(--white)!important;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn-2 {
+    color: var(--primary);
+    text-transform: uppercase;
+    border: 1px solid var(--primary);
+    padding: 14px 29px;
+    font-weight: 600;
+    transition: all 0.3s linear;
+}
+
+.btn-2:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.container-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+nav .logo img {
+    width: 170px;
+    max-width: 180px;
+    height: 20px;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    width: 350px;
+}
+
+.nav-list a {
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--muted);
+}
+
+.nav-list li:hover a {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.header-right {
+    display: flex;
+}
+
+.search {
+    display: flex;
+}
+
+#search {
+    background-color: var(--primary-muted);
+    padding-left: 15px;
+    width: 185px;
+    font-size: 16px;
+}
+
+#search:focus {
+    outline: none;
+}
+
+.search button,
+.search input {
+    border: none;
+}
+
+.user-button {
+    margin: 0 20px;
+}
+
+.search button,
+.btn-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.btn-1 {
+    background-color: var(--primary-muted);
+}
+
+.btn-1 img {
+    width: 15px;
+    height: 25px;
+}
+
+
+/* slider section */
+
+.slider-div {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin: 86px 0;
+}
+
+.slider-left {}
+
+.slider-left h2 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.slider-left p {
+    font-size: 16px;
+    padding-right: 50px;
+    margin: 40px 0 35px 0;
+}
+
+.slider-btns :nth-child(1) {
+    margin-right: 25px;
+}
+
+.slider-right img {
+    width: 580px;
+}
+
+.slider-categories {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    bottom: -133px;
+    left: 130px;
+    max-width: 970px;
+    height: 130px;
+    padding: 27px 28px 26px;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 30px #0a0a0a12;
+    background-color: var(--white);
+}
+
+.slider-categories div {
+    margin: 0 35px;
+}
+
+.slider-categories :first-child {
+    margin-left: 0;
+}
+
+.slider-categories :last-child {
+    margin-right: 0;
+}
+
+.categories-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.categories-container:hover span {
+    color: var(--primary);
+}
+
+.categories-container img {
+    width: 53px;
+    height: 53px;
+    margin-bottom: 5px;
+}
+
+.categories-container span {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--muted);
+}
+
+
+/* new - products */
+
+#new-products {
+    background-color: var(--secondary);
+}
+
+.new-products-div {
+    padding: 135px 0 60px;
+}
+
+.fresh {
+    width: 270px;
+    padding: 8px 8px 25px;
+    background-color: var(--white);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.fresh h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.fresh a {
+    padding: 12px 25px;
+    background-color: var(--primary-muted);
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all 0.3s linear;
+}
+
+.fresh a:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.new-products-div {
+    display: flex;
+}
+
+.new-products-blog {
+    display: inline-block;
+    text-align: center;
+}
+
+.new-products-blog h3 {
+    text-transform: capitalize;
+    margin: -5px 0 60px;
+}
+
+.new-products-slider {
+    display: flex;
+}
+
+.product {
+    padding: 12px 12px 28px;
+    background-color: var(--white);
+    margin-left: 30px;
+    transition: all 1s linear;
+    position: relative;
+}
+
+.product:hover .product-hover {
+    display: flex;
+}
+
+.product-hover {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 108px;
+    left: 52px;
+    display: none;
+    justify-content: left;
+    align-items: center;
+    width: 166px;
+    height: 40px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 17px #14141410;
+    padding: 0 6px;
+}
+
+.product-hover span {
+    display: flex;
+    align-items: baseline;
+    padding: 0 10px;
+    border-right: 1px solid var(--silver);
+    height: 17px;
+}
+
+.product-hover span:hover img {
+    background-color: red;
+}
+
+.product-hover :last-child {
+    border-right: 0;
+}
+
+.product p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--silver);
+    margin: 15px 0 15px;
+}
+
+.product-prices h4 {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.last-price {
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+/* Beef container */
+
+#beef {
+    background-image: url(../image/Beef-background.png);
+}
+
+.beef-right h2 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.beef-prices h4 {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.beef-last-price {
+    text-decoration: line-through;
+    color: var(--silver);
+}
+
+.beef-price {}
+
+.beef-left-divs {
+    transform: rotate(315deg);
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beef-div {
+    width: 195px;
+    height: 195px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#beef-1 {
+    background-image: url(../image/beef-divs/daily-slowdown-7-TOCB28rms-unsplash\ 1.png);
+}
+
+#beef-2 {
+    display: flex;
+    align-items: flex-end;
+}
+
+#beef-2_1 {
+    width: 105px;
+    height: 105px;
+    background-color: var(--primary-muted);
+    border-radius: 5px;
+}
+
+#beef-2_2 {}
+
+#beef-2_2 span {
+    color: var(--primary);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#beef-3 {
+    background-image: url(../image/beef-divs/luis-santoyo-DgR5s1xhqA0-unsplash\ 1.png);
+}
+
+#beef-4 {
+    background-image: url(../image/beef-divs/cindie-hansen-ak2UGvCPDk8-unsplash\ 1.png);
+}
