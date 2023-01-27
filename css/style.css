@@ -410,6 +410,7 @@ nav .logo img {
 .beef-last-price {
     text-decoration: line-through;
     color: var(--silver);
+    margin-right: 15px;
 }
 
 .beef-left {
