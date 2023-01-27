@@ -525,13 +525,18 @@ nav .logo img {
 
 .selling-list ul {
     margin: 20px 0 40px;
-    width: 440px;
+    width: 450px;
 }
 
 .selling-list li {
     display: inline-block;
-    width: calc(100% /7);
+    width: 70px;
     text-align: center;
+}
+
+.selling-list :nth-child(4) {
+    width: 40px;
+    min-width: 40px;
 }
 
 .selling-list li:hover a {
