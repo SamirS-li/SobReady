@@ -201,12 +201,20 @@ nav .logo img {
     width: 580px;
 }
 
+.slider-addisional-div {
+    width: 970px;
+    display: flex;
+    position: absolute;
+    bottom: -140px;
+    left: 60px;
+    max-width: 970px;
+    height: 130px;
+    justify-content: center;
+}
+
 .slider-categories {
     display: flex;
     flex-wrap: nowrap;
-    position: absolute;
-    bottom: -133px;
-    left: 130px;
     max-width: 970px;
     height: 130px;
     padding: 27px 28px 26px;
